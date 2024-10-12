@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Formularios</h1>
+        <!-- form:post = se usa éste para proteger los datos (va codificada) ya que el form:get es visible los datos y son sensibles  -->
+         <!-- action: saqué la action del formsubmit: página de google para que me envíe al mail -->
+        <form action="https://formsubmit.co/mariapazmario@gmail.com" method="post">
+            <!-- Encierro al input y label en un div para mandar el botón haciAa abajo -->
+             <!-- required: el campo es obligatorio -->
+            <div>
+                <label for="nombre">Nombre:</label> 
+                <input type="text" name="nombre" id="nombre" maxlength="10" placeholder="Juan Perez" required>
+                <!-- Éste tipo de input (botón enviar ya no se utiliza, usamos button) -->
+                <!-- <input type="submit" value="Enviar"> -->
+            </div>
+
+            <!-- FIELDSET es para encuadrar el formulario -->
+            <fieldset>
+                <!-- TIPOS INPUT -->
+                 <!-- legend es para poner texto en el encuadre del formulario -->
+                <legend>Probando inputs</legend>
+                <!-- FECHA -->
+                <input type="date" name="" id="">
+                <!-- EMAIL: Si no incluyo el @ no me deja enviarlo -->
+                <input type="email" name="" id="" placeholder="tipo email">
+                <!-- COLOR -->
+                <input type="color" name="" id="">
+                <!-- ARCHIVO -->
+                <input type="file" name="" id="">
+                <!-- CONTRASEÑA: NO SE VE LO QUE ESCRIBO -->
+                <input type="password" name="" id="" placeholder="tipo contraseña">
+                <!-- PARA ESCRIBIR UNA URL -->
+                <input type="url" name="" id="" placeholder="tipo url">
+                <!-- RANGO - En éste caso el comienzo es el 0, termina en 100 y el paso es en 25-->
+                <input type="range" name="" id="" min="0" max="100" step="25">
+            </fieldset>
+
+            <div>
+                <!-- CHECKBOX: SIRVE PARA ELEGIR VARIAS OPCIONES -->
+                <input type="checkbox" name="" id=""> <label for="">Uno</label>
+                <input type="checkbox" name="" id=""> <label for="">Dos</label>
+                <input type="checkbox" name="" id=""> <label for="">Tres</label>
+            </div>
+
+            <div>
+                <!-- RADIO: SIRVE PARA ELEGIR UNA OPCIÓN, PERO TENGO QUE AGREGARLE EL NAME PARA QUE ME DEJE HACERLO -->
+                 <!-- el value es para que lo vea la pparte de backend -->
+                <input type="radio" name="lenguaje" id="" value="html"> <label for="">HTML</label>
+                <input type="radio" name="lenguaje" id="" value="css"> <label for="">CSS</label>
+                <input type="radio" name="lenguaje" id="" value="js"> <label for="">JS</label>
+            </div>
+
+            <!-- TEXTAREA: ES UN CUADRADO GRANDE PARA ESCRIBIR CONSULTAS/COMENTARIOS -->
+            <div>
+                <label for="consulta">Consulta</label>
+
+                <textarea name="consulta" id="consulta" placeholder="un texto..."></textarea>
+            </div>
+
+            <!-- SELECT, si quiero seleccionar varias opciones le pongo el atributo "multiple", pero hay que aclarar al usuario que para seleccionar las opciones tengo que poner control y seleccion -->
+            <div>
+                <label for="opcion">Opciones:</label>
+                <select name="opcion" id="opcion">
+                    <option value="1">Opcion 1</option>
+                    <option value="2">Opcion 2</option>
+                    <option value="3">Opcion 3</option>
+                </select>
+
+            </div>
+            <button type="submit">Enviar</button>
+            <!-- Se usa para borrar todo lo que cargué en el formulario, igual no se usa. Es peligroso en éstos casos -->
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <small>Copyright 2024</small>
+    </footer>
+</body>
+
+</html>

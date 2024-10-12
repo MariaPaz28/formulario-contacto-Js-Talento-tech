@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Clase</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <body>
+        <h2>Formulario de registro</h2>
+        <fieldset>
+            <div>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input size ="30" type="text" name="name" id="nombre" placeholder="Ingrese su nombre aquí...">
+            <label for="apellido">Apellido:</label>
+            <input size= "30" type="text" name="ape" id="apellido" placeholder="Ingrese su apellido aquí...">
+           <br><br>
+
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="dire" id="direccion" placeholder="Ingrese su dirección aquí...">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="city" id="ciudad" value="Buenos Aires" readonly>
+            </div>
+            <br><br>
+            <div>
+                <label for="codigo">Código postal:</label>
+                <input type="number" name="code" id="codigo" placeholder="Ingrese su código postal aquí...">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="tel" id="telefono" placeholder="Ingrese su teléfono aquí...">           
+             </div>
+             <br><br>
+             <div>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fe" id="fecha">
+             </div>
+             <div>
+                <label for="genero">Género:</label>
+                <input type="radio" name="gen" id="" value="femenino" checked> <label for="">Femenino</label>
+                <input type="radio" name="gen" id="" value="masculino"> <label for="">Masculino</label>
+                <input type="radio" name="gen" id="" value="otro"> <label for="">Otro</label>
+             </div>
+        </fieldset>
+
+        <div>
+            <!-- CHECKBOX: SIRVE PARA ELEGIR VARIAS OPCIONES -->
+             <label for="">Conocimientos previos:</label>
+            <input type="checkbox" name="" id=""> <label for="">HTML</label>
+            <input type="checkbox" name="" id=""> <label for="">CSS</label>
+            <input type="checkbox" name="" id=""> <label for="">Bootstrap</label>
+            <input type="checkbox" name="" id=""> <label for="">Js</label>
+            <input type="checkbox" name="" id=""> <label for="">Base de datos</label>
+            <input type="checkbox" name="" id=""> <label for="">Python</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="estudios">Estudios:</label>
+            <select name="study" id="estudios">
+                <option value="1">Primario</option>
+                <option value="2">Secundario</option>
+                <option value="3">Terciario/Universitario</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="comentarios">Comentarios:</label>
+
+            <textarea name="consulta" id="comentarios"></textarea>
+        </div>
+        <br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+    </body>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
